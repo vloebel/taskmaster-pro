@@ -34,6 +34,8 @@ var loadTasks = function() {
   }
 
   // loop over object properties
+  // The .each() method  iterates over the DOM elements that are part of the jQuery object. Each time the callback runs, it is passed the current loop iteration, beginning from 0. More importantly, the callback is fired in the context of the current DOM element, so the keyword this refers to the element.
+
   $.each(tasks, function(list, arr) {
     // then loop over sub-array
     arr.forEach(function(task) {
